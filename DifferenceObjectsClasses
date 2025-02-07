@@ -1,0 +1,29 @@
+// Filename: DifferenceObjectsClasses.java
+public class DifferenceObjectsClasses {
+    // Main method to run the program
+    public static void main(String[] args) {
+        // Creating an instance (object) of the Car class
+        Car myCar = new Car(); // myCar is an object
+
+        // Setting the properties of the object using the class attributes
+        myCar.color = "Red"; // Setting color of myCar object
+        myCar.model = "Toyota"; // Setting model of myCar object
+
+        // Displaying the properties of the object
+        System.out.println("Car Color: " + myCar.color); // Accessing object's color attribute
+        System.out.println("Car Model: " + myCar.model); // Accessing object's model attribute
+
+        // Calling a method on the object
+        myCar.drive(); // Invoking the drive method of the myCar object
+
+        // Creating another object to demonstrate multiple instances
+        Car anotherCar = new Car(); // anotherCar is a different object
+        anotherCar.color = "Blue"; // Setting a different color
+        anotherCar.model = "Honda"; // Setting a different model
+
+        // Displaying properties of another object
+        System.out.println("Another Car Color: " + anotherCar.color); // Accessing another object's attribute
+        System.out.println("Another Car Model: " + anotherCar.model); // Accessing another object's attribute
+        anotherCar.drive(); // Calling drive method on another object
+    }
+}
